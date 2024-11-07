@@ -1,4 +1,7 @@
 {% extends 'master.html' %}
+{% load static %}
+
+
 
 {% block title %}
   <title>Home</title>
@@ -8,4 +11,18 @@
 {% block content %}
     <h2 class="text-center text-danger">Welcome to Mara Resort Camp</h2>
     <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, dolorem incidunt minima nisi perspiciatis quis quo! Assumenda delectus dolorum, ipsa minus optio reprehenderit sequi similique unde voluptatibus. Modi, similique.</span><span>Consequuntur, eveniet fugiat illum ipsa laborum provident qui quod sed totam ut voluptas voluptatem voluptates! A dolorum necessitatibus officia quisquam reprehenderit? Exercitationem, facilis, odit? Cupiditate in ipsa omnis qui soluta?</span><span>Accusantium aliquid aperiam at atque consequuntur cumque dignissimos dolorum ducimus earum exercitationem fuga hic, inventore ipsam itaque laboriosam, laudantium maiores minus molestias mollitia quas quod saepe sunt vero voluptas voluptatum?</span></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+            </div>
+            <div class="col-sm-4">
+                 <img src="{% static 'images/twitter.png' %}" alt="">
+            </div>
+            <div class="col-sm-4">
+                 <img src="{% static 'images/whatsapp.png' %}" alt="">
+            </div>
+        </div>
+    </div> 
 {% endblock %}
